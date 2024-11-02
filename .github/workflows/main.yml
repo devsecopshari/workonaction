@@ -6,4 +6,5 @@ jobs:
       steps:
       - name: info
         run: |
-           echo "push the branches"
+           echo "push the branches" |
+           ls
