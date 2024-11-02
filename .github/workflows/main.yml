@@ -1,5 +1,10 @@
 name : push events
-on: push
+on: 
+  push:
+    branches:
+      - main
+  schedule:
+     - cron : '*/5 * * * *'
 jobs:
   show-info:
       runs-on: ubuntu-latest
